@@ -1,3 +1,7 @@
+.home {
+    height: 100vh;
+}
+
 .z-background {
   z-index: -1;
 }
