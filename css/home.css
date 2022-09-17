@@ -1,0 +1,159 @@
+.z-background {
+  z-index: -1;
+}
+
+.video {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ---------Logo--------- */
+.logo-container {
+  width: calc(66.8178px + 190 * ((100vw - 320px) / 1120));
+  height: calc(23.118px + 50 * ((100vw - 320px) / 1120));
+  top: calc(35.60364px + 54.39636 * ((100vw - 320px) / 1120));
+  left: 8.3333333333vw;
+}
+
+.logo-container a {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.logo-container img {
+  display: block;
+  height: auto;
+  min-width: 140px;
+  width: 100%;
+}
+
+/* -----------Navigation ------------- */
+
+.main-nav {
+  font-weight: 400;
+  font-size: calc(13.4415864px + 5.5584136 * ((100vw - 320px) / 1120));
+  line-height: 1.75;
+  width: 60px;
+  z-index: 100;
+}
+
+.main-nav-bar-button {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.main-nav-bar-button-icon {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  margin-left: calc((100% - 30px) / 2);
+  transition: all 0.2s ease;
+  transition-delay: 300ms;
+}
+
+.main-nav-bar-button-icon-bar {
+  background-color: #075146;
+  height: 2px;
+  width: 30px;
+  transition: all 0.3s ease;
+}
+
+.main-nav-bar-button-icon-bar:nth-child(2) {
+  width: 15px;
+}
+
+.main-nav-bar-button.cross .main-nav-bar-button-icon {
+  gap: 0;
+  transition: all 0.2s ease;
+}
+
+.main-nav-bar-button.cross .main-nav-bar-button-icon-bar {
+  rotate: 50deg;
+  transition: all 0.3s ease;
+  transition-delay: 200ms;
+}
+
+.main-nav-bar-button.cross .main-nav-bar-button-icon-bar:nth-child(2) {
+  width: 30px;
+  rotate: -50deg;
+}
+
+.main-nav-bar-button-label {
+  line-height: 1.75;
+  top: 4.8611111111vw;
+  font-weight: 300;
+  font-size: calc(11.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.main-nav-sidebar {
+  font-weight: 400;
+  font-size: calc(13.4415864px + 5.5584136 * ((100vw - 320px) / 1120));
+  line-height: 1.75;
+}
+
+.main-nav-sidebar-menu li a {
+  color: #ffffff;
+}
+
+.menu-nav {
+  z-index: 90;
+  background-color: #ffffff;
+  transform: translateX(100vw);
+  transition: transform 800ms ease;
+}
+
+.menu-nav.open {
+  transform: translateX(0);
+  transition: transform 800ms ease;
+}
+
+.menu-nav ul li a {
+  font-size: calc(30px + 40 * ((100vw - 320px) / 1120));
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #075146;
+  opacity: 0.3;
+  transition: opacity 500ms;
+  transition-delay: 100ms;
+}
+
+.menu-nav.open ul li a {
+  opacity: 1;
+  transition: opacity 500ms;
+  transition-delay: 100ms;
+}
+
+/* --------------SCROLLING TEXT---------------- */
+.scroll-text {
+  z-index: 80;
+  /* animation: scroll 8s 2s cubic-bezier(0.73, 0.67, 0.71, 0.7) infinite forwards; */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-150%);
+  }
+}
+
+.scroll-text {
+  font-size: 6rem;
+}
+
+.scroll-text > span {
+  /* color: transparent; */
+  font-family: "GT-America-Bold";
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #ffffff;
+}
