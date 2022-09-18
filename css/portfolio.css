@@ -125,6 +125,10 @@
   object-fit: contain;
 }
 
+.project-intro-video {
+  height: 99%;
+}
+
 .project-title > span {
   display: block;
   font-family: 'GT-America-Bold', sans-serif;
