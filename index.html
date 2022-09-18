@@ -1,118 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <title>BTE Website</title>
-  </head>
-  <body>
-    <section class="container-fluid position-relative px-0 home">
-      <div class="row position-absolute mx-0 z-background">
-        <video
-          playsinline
-          autoplay
-          muted
-          loop
-          poster="./assets/logo.jpeg"
-          class="px-0 video"
-        >
-          <source src="./assets/video-bg.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <!-- Logo -->
-      <div class="position-absolute logo-container">
-        <a href="">
-          <img src="./assets/logo.png" alt="Beauvoir Logo" />
-        </a>
-      </div>
 
-      <nav class="main-nav position-fixed top-0 bottom-0 end-0">
-        <div class="main-nav-bar-button" id="menu-icon">
-          <div class="main-nav-bar-button-icon">
-            <div class="main-nav-bar-button-icon-bar"></div>
-            <div class="main-nav-bar-button-icon-bar"></div>
-          </div>
-          <div class="main-nav-bar-button-label d-none">Close</div>
-        </div>
-        <div class="main-nav-sidebar d-none">
-          <ul class="main-nav-sidebar-menu">
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/portfolio.css" />
+  <title>BTE Website</title>
+</head>
 
-      <nav
-        class="menu-nav position-fixed top-0 start-0 end-0 bottom-0"
-        id="menu-nav"
-      >
-        <div class="position-absolute mt-5 ms-5">
-          <svg
-            width="40"
-            height="38"
-            viewBox="0 0 40 38"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M23.2106 37.0548C25.4924 37.0548 27.663 36.7453 29.4864 36.2226C31.4521 35.6928 33.0481 34.8457 34.3905 33.8999C35.7504 32.9417 36.8815 31.7583 37.6445 30.4441C38.4125 29.1215 38.7974 27.6836 38.7974 26.1441C38.7974 24.159 38.1523 22.2754 36.7492 20.6278L36.7434 20.6211L36.7375 20.6144C35.7958 19.5602 34.5775 18.6329 33.0879 17.963C33.2082 17.88 33.3319 17.7921 33.4612 17.6994L33.4881 17.6801L33.5133 17.6584L33.5229 17.6501C34.1015 17.1519 34.7073 16.6302 35.3152 16.002C35.9806 15.3145 36.3752 14.5214 36.715 13.8384L36.7328 13.8026C37.1226 13.0194 37.3955 12.1002 37.3955 11.1546C37.3955 9.80326 37.0039 8.47657 36.3741 7.28352C35.7245 6.05275 34.6977 4.95572 33.3191 4.08931C32.0776 3.23669 30.4917 2.50606 28.805 1.98734L28.8051 1.98721L28.7915 1.98331C26.9529 1.45556 25.0101 1.25 22.8602 1.25H3H1.6236L2.36977 2.40659C2.85586 3.16003 3.19222 4.42105 3.42441 6.2206C3.65244 7.98784 3.76872 10.2668 3.76872 12.9655V25.3393C3.76872 28.038 3.65244 30.3169 3.42441 32.0842C3.1999 33.8242 2.75413 35.1459 2.33353 35.9608L1.76891 37.0548H3H23.2106ZM20.5237 14.2275H17.068V10.0938H20.5237C21.4537 10.0938 22.0353 10.3627 22.3107 10.6591L22.3391 10.6897L22.3708 10.717C22.7423 11.0369 22.9279 11.5031 22.9279 12.1606C22.9279 12.7623 22.7739 13.1742 22.3449 13.6264C21.9071 13.9952 21.385 14.2275 20.5237 14.2275ZM24.6803 25.3393C24.6803 26.1969 24.3354 26.769 23.8455 27.1294C23.1612 27.5452 22.3685 27.8085 21.1078 27.8085H17.068V22.8701H21.1078C22.2739 22.8701 23.1853 23.1431 23.8691 23.5637C24.402 23.8915 24.6803 24.4095 24.6803 25.3393Z"
-              stroke="#075146"
-              stroke-width="1.5"
-            ></path>
-          </svg>
+<body>
+  <section class="container-fluid position-relative px-0 home">
+    <div class="row position-absolute mx-0 z-background">
+      <video playsinline autoplay muted loop poster="./assets/logo.jpeg" class="px-0 video">
+        <source src="./assets/video-bg.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- Logo -->
+    <div class="position-absolute logo-container">
+      <a href="">
+        <img src="./assets/logo.png" alt="Beauvoir Logo" />
+      </a>
+    </div>
+
+    <nav class="main-nav position-fixed top-0 bottom-0 end-0">
+      <div class="main-nav-bar-button" id="menu-icon">
+        <div class="main-nav-bar-button-icon">
+          <div class="main-nav-bar-button-icon-bar"></div>
+          <div class="main-nav-bar-button-icon-bar"></div>
         </div>
-        <ul
-          class="d-flex flex-column h-100 justify-content-center align-items-center gap-2"
-        >
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">culture</a></li>
-          <li><a href="#">careers</a></li>
-          <li><a href="#">contact</a></li>
+        <div class="main-nav-bar-button-label d-none">Close</div>
+      </div>
+      <div class="main-nav-sidebar d-none">
+        <ul class="main-nav-sidebar-menu">
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
-      </nav>
-    </section>
+      </div>
+    </nav>
 
-    <section class="container-fluid bottom-0">
-      <div class="about">
-        <div class="about-top">
+    <nav class="menu-nav position-fixed top-0 start-0 end-0 bottom-0" id="menu-nav">
+      <div class="position-absolute mt-5 ms-5">
+        <svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.2106 37.0548C25.4924 37.0548 27.663 36.7453 29.4864 36.2226C31.4521 35.6928 33.0481 34.8457 34.3905 33.8999C35.7504 32.9417 36.8815 31.7583 37.6445 30.4441C38.4125 29.1215 38.7974 27.6836 38.7974 26.1441C38.7974 24.159 38.1523 22.2754 36.7492 20.6278L36.7434 20.6211L36.7375 20.6144C35.7958 19.5602 34.5775 18.6329 33.0879 17.963C33.2082 17.88 33.3319 17.7921 33.4612 17.6994L33.4881 17.6801L33.5133 17.6584L33.5229 17.6501C34.1015 17.1519 34.7073 16.6302 35.3152 16.002C35.9806 15.3145 36.3752 14.5214 36.715 13.8384L36.7328 13.8026C37.1226 13.0194 37.3955 12.1002 37.3955 11.1546C37.3955 9.80326 37.0039 8.47657 36.3741 7.28352C35.7245 6.05275 34.6977 4.95572 33.3191 4.08931C32.0776 3.23669 30.4917 2.50606 28.805 1.98734L28.8051 1.98721L28.7915 1.98331C26.9529 1.45556 25.0101 1.25 22.8602 1.25H3H1.6236L2.36977 2.40659C2.85586 3.16003 3.19222 4.42105 3.42441 6.2206C3.65244 7.98784 3.76872 10.2668 3.76872 12.9655V25.3393C3.76872 28.038 3.65244 30.3169 3.42441 32.0842C3.1999 33.8242 2.75413 35.1459 2.33353 35.9608L1.76891 37.0548H3H23.2106ZM20.5237 14.2275H17.068V10.0938H20.5237C21.4537 10.0938 22.0353 10.3627 22.3107 10.6591L22.3391 10.6897L22.3708 10.717C22.7423 11.0369 22.9279 11.5031 22.9279 12.1606C22.9279 12.7623 22.7739 13.1742 22.3449 13.6264C21.9071 13.9952 21.385 14.2275 20.5237 14.2275ZM24.6803 25.3393C24.6803 26.1969 24.3354 26.769 23.8455 27.1294C23.1612 27.5452 22.3685 27.8085 21.1078 27.8085H17.068V22.8701H21.1078C22.2739 22.8701 23.1853 23.1431 23.8691 23.5637C24.402 23.8915 24.6803 24.4095 24.6803 25.3393Z"
+            stroke="#075146" stroke-width="1.5"></path>
+        </svg>
+      </div>
+      <ul class="d-flex flex-column h-100 justify-content-center align-items-center gap-2">
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">culture</a></li>
+        <li><a href="#">careers</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="container-fluid px-0">
+    <div class="about-container">
+      <div class="about-top">
+        <div class="about">
           <div>
-            <span>RATED CREATIVE AGENCY</span>
-            <span>INTEGRATED CREATIVE AGENCY</span>
             <span>THE STRENGTH OF A</span>
             <span>CREATIVE AGENCY, THE</span>
             <span>NIMBLENESS OF A</span>
             <span>PRODUCTION STUDIO.</span>
           </div>
-          <a href="#">See our services</a>
         </div>
-        <div class="about-bottom">
+        <div class="about-cta">
+          <a href="#" class="cta">See our services <span class="r-arrow"
+              style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
+        </div>
+      </div>
+      <div class="about-bottom">
+        <div class="about">
           <div>
             <span>TO WORK WITH US, JOIN</span>
             <span>FORCES OR TO JUST MEET</span>
             <span>FOR LUNCH.</span>
           </div>
-          <a href="#">contact us</a>
+        </div>
+        <div class="about-cta">
+          <a href="#" class="cta cta-alt">contact us <span class="r-arrow"
+              style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
         </div>
       </div>
-      <div class="portfolios"></div>
-    </section>
+    </div>
+    <div class="portfolios">
+      <div class="projects">
+        <div class="project">
+          <div class="project-demo video">
+            <video playsinline autoplay muted loop poster="./assets/portfolio/project-6.webp" class="px-0 video">
+              <source src="./assets/portfolio/project-vdo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-desc">
+            <div class="project-info">
+              <div class="project-title">
+                <span>whatever</span>
+                <span>the</span>
+                <span>challange</span>
+                <span>we make it</span>
+                <span>a journey</span>
+              </div>
+              <div class="project-cta">
+                <a href="#" class="cta">contact us <span class="r-arrow"
+                  style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-demo">
+            <img src="./assets/portfolio/project-1.webp" alt="">
+          </div>
+          <div class="project-desc">
+            <div class="project-info">
+              <div class="project-title">
+                <span>whatever</span>
+                <span>the</span>
+                <span>challange</span>
+                <span>we make it</span>
+                <span>a journey</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci consectetur illum quae veniam quaerat, tempora facere</p>
+              <div class="project-cta">
+                <a href="#" class="cta">contact us <span class="r-arrow"
+                  style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-demo">
+            <img src="./assets/portfolio/project-2.webp" alt="">
+          </div>
+          <div class="project-desc">
+            <div class="project-info">
+              <div class="project-title">
+                <span>whatever</span>
+                <span>the</span>
+                <span>challange</span>
+                <span>we make it</span>
+                <span>a journey</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci consectetur illum quae veniam quaerat, tempora facere</p>
+              <div class="project-cta">
+                <a href="#" class="cta">contact us <span class="r-arrow"
+                  style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-demo">
+            <img src="./assets/portfolio/project-3.webp" alt="">
+          </div>
+          <div class="project-desc">
+            <div class="project-info">
+              <div class="project-title">
+                <span>whatever</span>
+                <span>the</span>
+                <span>challange</span>
+                <span>we make it</span>
+                <span>a journey</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci consectetur illum quae veniam quaerat, tempora facere</p>
+              <div class="project-cta">
+                <a href="#" class="cta">contact us <span class="r-arrow"
+                  style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-demo">
+            <img src="./assets/portfolio/project-4.webp" alt="">
+          </div>
+          <div class="project-desc">
+            <div class="project-info">
+              <div class="project-title">
+                <span>whatever</span>
+                <span>the</span>
+                <span>challange</span>
+                <span>we make it</span>
+                <span>a journey</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci consectetur illum quae veniam quaerat, tempora facere</p>
+              <div class="project-cta">
+                <a href="#" class="cta">contact us <span class="r-arrow"
+                  style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-demo">
+            <img src="./assets/portfolio/project-5.webp" alt="">
+          </div>
+          <div class="project-desc">
+            <div class="project-info">
+              <div class="project-title">
+                <span>whatever</span>
+                <span>the</span>
+                <span>challange</span>
+                <span>we make it</span>
+                <span>a journey</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci consectetur illum quae veniam quaerat, tempora facere</p>
+              <div class="project-cta">
+                <a href="#" class="cta">contact us <span class="r-arrow"
+                  style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-demo">
+            <img src="./assets/portfolio/project-6.webp" alt="">
+          </div>
+          <div class="project-desc">
+            <div class="project-info">
+              <div class="project-title">
+                <span>whatever</span>
+                <span>the</span>
+                <span>challange</span>
+                <span>we make it</span>
+                <span>a journey</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci consectetur illum quae veniam quaerat, tempora facere</p>
+              <div class="project-cta">
+                <a href="#" class="cta">contact us <span class="r-arrow"
+                  style="font-size: calc(30.0022944px + 8.9977056 * ((100vw - 320px) / 1120));">&#8594</span> </a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="./bootstrap/bootstrap.min.js"></script>
-    <script src="./js/navigation.js"></script>
-  </body>
+  <script src="./bootstrap/bootstrap.min.js"></script>
+  <script src="./js/navigation.js"></script>
+</body>
+
 </html>

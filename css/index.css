@@ -1,13 +1,29 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'GT-America';
+  src: url(../assets/fonts/GT\ America\ Regular/GT\ America\ Regular.ttf)
+    format('ttf');
+}
+
+@font-face {
+  font-family: 'GT-America-Bold';
+  src: url(../assets/fonts/GT\ America\ Bold/GT\ America\ Bold.ttf)
+    format('ttf');
+}
+
+body {
+  font-family: 'GT-America', sans-serif;
 }

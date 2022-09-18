@@ -1,5 +1,5 @@
 .home {
-    height: 100vh;
+  height: 100vh;
 }
 
 .z-background {
@@ -104,6 +104,7 @@
 
 .main-nav-sidebar-menu li a {
   color: #ffffff;
+  font-family: 'GT-America';
 }
 
 .menu-nav {
@@ -134,30 +135,4 @@
   opacity: 1;
   transition: opacity 500ms;
   transition-delay: 100ms;
-}
-
-/* --------------SCROLLING TEXT---------------- */
-.scroll-text {
-  z-index: 80;
-  /* animation: scroll 8s 2s cubic-bezier(0.73, 0.67, 0.71, 0.7) infinite forwards; */
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translate(-150%);
-  }
-}
-
-.scroll-text {
-  font-size: 6rem;
-}
-
-.scroll-text > span {
-  /* color: transparent; */
-  font-family: "GT-America-Bold";
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px #ffffff;
 }
