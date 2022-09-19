@@ -1,3 +1,7 @@
+.about-container {
+  overflow-x: clip;
+}
+
 .about-top {
   background-color: #075146;
   color: #141414;
@@ -189,6 +193,9 @@
   font-family: 'GT-America-Bold', sans-serif;
   font-weight: 900;
   color: transparent;
+}
+
+.project .scrolling-text span {
   -webkit-text-stroke: 1px #075146;
 }
 
@@ -199,4 +206,13 @@
   100% {
     transform: translateX(-110%);
   }
+}
+
+.scrolling-text-main {
+  -webkit-text-stroke: 1px #ffffff;
+  top: -5rem;
+}
+
+.scrolling-text-main span {
+  font-size: 6rem;
 }
