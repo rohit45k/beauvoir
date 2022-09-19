@@ -1,0 +1,69 @@
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    width: 120px;
+    background-color: #ffffff;
+  }
+
+  .main-nav-bar-button {
+    transform: rotate(90deg);
+    height: 120px;
+  }
+
+  /* ------------------SECTION 2-------------------- */
+
+  .section2 {
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-container {
+    height: 100vh;
+    width: 60vw;
+  }
+
+  .about-top,
+  .about-bottom {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolios {
+    all: unset;
+    display: contents;
+    position: relative;
+    height: 100vh;
+  }
+
+  .projects {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: max-content;
+    align-items: center;
+    background-color: #e4dedb;
+    padding-right: 140px;
+  }
+
+  .project {
+    transform: translateX(-10vw);
+    flex-direction: row;
+    gap: 3rem;
+    min-width: 80vw;
+    overflow-x: clip;
+    background-color: #e4dedb;
+  }
+
+  .project-demo video,
+  .project-demo img {
+    max-height: 600px;
+    width: auto;
+  }
+
+  .project-desc {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
