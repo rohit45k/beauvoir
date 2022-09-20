@@ -52,7 +52,7 @@
     flex-direction: row;
     gap: 3rem;
     min-width: 80vw;
-    overflow-x: clip;
+    /* overflow-x: clip; */
     background-color: #e4dedb;
   }
 
@@ -65,5 +65,25 @@
   .project-desc {
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  .project .scrolling-text {
+    writing-mode: vertical-lr;
+    height: max-content;
+    left: -6rem;
+    z-index: -1;
+    animation-name: scrolltext2;
+  }
+
+  .project .scrolling-text span {
+    font-size: 7rem;
+  }
+
+  @keyframes scrolltext2 {
+    0% {
+      transform: translateY(100vh);
+    } 100% {
+      transform: translateY(-110%);
+    }
   }
 }
