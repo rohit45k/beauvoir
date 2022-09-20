@@ -122,6 +122,15 @@
   transition: transform 800ms ease;
 }
 
+.menu-nav ul li {
+  transition: transform 200ms ease;
+}
+
+.menu-nav ul li:hover {
+  transform: translateX(-35px);
+  transition: transform 200ms ease;
+}
+
 .menu-nav ul li a {
   font-size: calc(30px + 40 * ((100vw - 320px) / 1120));
   font-weight: 300;

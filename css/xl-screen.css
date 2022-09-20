@@ -72,7 +72,7 @@
     height: max-content;
     left: -6rem;
     z-index: -1;
-    animation-name: scrolltext2;
+    animation: scrolltext2 5s linear infinite forwards;
   }
 
   .project .scrolling-text span {
